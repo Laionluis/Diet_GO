@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/DiaSemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:state_selected="false"
+        android:text="Segunda-Feira"
+        android:textAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="2dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:background="#af6c28"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_alignParentLeft="true" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="2dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="#af6c28"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/bolinha"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/DiaSemana"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/bolinha" />
+
+
+
+
+</RelativeLayout>

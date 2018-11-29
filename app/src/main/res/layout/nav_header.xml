@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@drawable/gradient"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <TextView
+        android:id="@+id/ola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olá"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seu objetivo atual é:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ObjetivoAtual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objetivo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="12sp" />
+</LinearLayout>

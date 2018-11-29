@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/doDia"
+        android:title="Dieta do Dia"
+        android:icon="@drawable/home_icon"/>
+    <item android:id="@+id/daSemana"
+        android:title="Dietas da Semana"
+        android:icon="@drawable/to_watch_icon"/>
+    <item android:id="@+id/estatisticas"
+        android:title="Estatística"
+        android:icon="@drawable/to_watch_icon"/>
+</menu>

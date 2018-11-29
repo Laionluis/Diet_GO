@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".CadastroPerfil">
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editIdade"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editMetaPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAltura" />
+
+    <EditText
+        android:id="@+id/editMetaPeso"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Meta de peso"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupObjetivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPeso" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Altura"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIdade" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="salvar"
+        android:text="SALVAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroupObjetivo"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMetaPeso">
+
+        <RadioButton
+            android:id="@+id/radio_emagrecer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emagrecer" />
+
+        <RadioButton
+            android:id="@+id/radio_massa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganhar massa muscular" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginRight="285dp"
+        android:text="Objetivo:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupObjetivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

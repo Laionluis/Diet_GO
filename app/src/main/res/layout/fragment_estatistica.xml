@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estatistica">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintBottom_toTopOf="@id/cardView3">
+
+
+        <TextView
+            android:id="@+id/dataAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Última atualização"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+        <TextView
+            android:id="@+id/ultimoPeso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="75dp"
+        app:cardBackgroundColor="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="254dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:layout_marginBottom="16dp">
+
+
+                <TextView
+                    android:id="@+id/metaPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Meta de peso"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/metaPesoResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="253dp"
+                android:layout_height="71dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="93dp"
+                android:layout_toStartOf="@+id/buttonSalvarPeso"
+                android:layout_toLeftOf="@+id/buttonSalvarPeso">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/IncluirPeso"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center_horizontal"
+                        android:text="Incluir Peso"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/novoPeso"
+                        android:layout_width="101dp"
+                        android:layout_height="44dp"
+                        android:layout_alignTop="@+id/IncluirPeso"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginBottom="1dp"
+                        android:ems="10"
+                        android:hint="Novo peso"
+                        android:inputType="number" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonSalvarPeso"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="105dp"
+                android:text="Salvar"
+                android:textAppearance="@style/TextAppearance.Compat.Notification.Title" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardView2"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView3"
+        app:menu="@menu/menu_bottom_nav"
+        android:visibility="gone"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
